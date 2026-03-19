@@ -4,7 +4,7 @@ An ETL pipeline that ingests Pennsylvania congressional district 1 precinct-leve
 
 ## Why PA-1?
 
-Pennsylvania's 1st congressional district is one of the most competitive swing districts in the country. Covering the eastern half of Bucks County and a slice of Montgomery County — suburban Philadelphia territory — it has been a Democratic target since the 2018 blue wave reshaped Pennsylvania's map.
+Pennsylvania's 1st congressional district is one of the most competitive swing districts in the country. Covering the eastern half of Bucks County and a slice of Montgomery County, it has been a Democratic target since the 2018 blue wave reshaped Pennsylvania's map.
 
 Republican incumbent Brian Fitzpatrick has held the seat since 2017, winning by narrow margins in both 2022 and 2024 against Democrat Ashley Ehasz. With Fitzpatrick consistently outrunning the top of the Republican ticket in a district where Biden and Harris performed well, PA-1 is a prime 2026 pickup opportunity. The key question is which specific precincts are trending Democratic and how much room remains to grow turnout.
 
@@ -65,8 +65,8 @@ Table: `project-7634b355-01fb-4460-96c.pa1_election.precinct_results`
 
 ## SQL analysis (`transform.sql`)
 
-**Query 1 — Dem vote share by precinct:** Shows how competitive each precinct is and how performance changed between 2022 and 2024. Useful for identifying base precincts vs. swing precincts.
+**Query 1 — Dem vote share by precinct:** Shows how competitive each precinct is and how performance changed between 2022 and 2024. Identifies base precincts vs. swing precincts.
 
-**Query 2 — Total votes by county and year:** Tracks turnout trends across Bucks and Montgomery counties. A drop in Dem votes even in a win signals soft turnout that GOTV can address.
+**Query 2 — Total votes by county and year:** Tracks turnout trends across Bucks and Montgomery counties.
 
-**Query 3 — Opportunity targets (precincts trending Dem):** Finds every precinct where Democratic vote share *improved* from 2022 to 2024, ranked by the size of improvement. These are the precincts where 2026 organizing dollars will have the highest ROI — the trend is already moving, it just needs reinforcement.
+**Query 3 — Opportunity targets (precincts trending Dem):** Finds every precinct where the Democratic vote share *improved* from 2022 to 2024, ranked by the size of improvement. These are the precincts where 2026 organizing dollars will have the highest ROI.
